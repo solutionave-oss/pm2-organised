@@ -1,4 +1,4 @@
-import { CreatePm2Entry } from "utils";
+import { CreatePm2Entry } from "src/utils";
 
 export const suc = CreatePm2Entry({
   name: "suc",

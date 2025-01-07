@@ -1,7 +1,5 @@
-const { lo_pal, suc } = require("./.build");
-
-console.log(lo_pal);
+const { apps } = require("./.build");
 
 module.exports = {
-  apps: [lo_pal, suc],
+  apps: apps,
 };

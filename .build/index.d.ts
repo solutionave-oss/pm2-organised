@@ -1,5 +1,3 @@
-declare const lo_pal: IEcosystemEntry;
+declare const apps: IEcosystemEntry[];
 
-declare const suc: IEcosystemEntry;
-
-export { lo_pal, suc };
+export { apps };
