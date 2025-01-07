@@ -13,6 +13,12 @@ interface IEcosystemEntry {
    * @description Path you want to watch
    */
   watch?: string;
+  /**
+   * @description Production environment variables
+   */
   env_production?: EnvVarObjectType;
+  /**
+   * @description Development environment variables
+   */
   env_development?: EnvVarObjectType;
 }
