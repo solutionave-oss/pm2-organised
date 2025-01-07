@@ -1,0 +1,25 @@
+{
+  "name": "ecosystem",
+  "type": "commonjs",
+  "scripts": {
+    "start:all": "bun tsup && pm2 start ecosystem.config.js --env production",
+    "dev:all": "bun tsup && pm2 start ecosystem.config.js --env development",
+    "delete:all": "pm2 delete ecosystem.config.js",
+    "--": "--",
+    "start": "bun tsup && pm2 start ecosystem.config.js --env production --only $npm_config_app",
+    "dev": "bun tsup && pm2 start ecosystem.config.js --env development --only $npm_config_app",
+    "delete": "pm2 delete ecosystem.config.js --only $npm_config_app",
+    "==": "==",
+    "tsup": "tsup"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsup": "^8.3.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "pm2": "^5.4.3"
+  }
+}
